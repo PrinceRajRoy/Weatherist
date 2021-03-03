@@ -17,9 +17,10 @@
         transform: translate3d(-50%, 0, 0)
         height: 25px
         width: 25px
-        background: url('../assets/light.svg') no-repeat
+        background: url('../assets/dark.svg') no-repeat
+        box-shadow: 3px 3px 6px var(--shadow1), -3px -3px 6px var(--shadow2)
         border-radius: 50%
         transition: all 0.5s
     &--active::before
         top: 26px
-        background: url('../assets/dark.svg') no-repeat
+        background: url('../assets/light.svg') no-repeat
