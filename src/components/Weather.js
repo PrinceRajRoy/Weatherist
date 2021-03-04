@@ -44,15 +44,14 @@ function Weather() {
                 </div>}
             <svg style={{ position: "fixed" }}>
                 <defs>
-                    <linearGradient id="grad1" x1="0" y1="1" x2="1" y2="0">
-                        <stop offset="0" stopColor="#f5d700" />
-                        <stop offset="1" stopColor="#0065da" />
+                    <linearGradient id="Humidity" x1="0" y1="0" x2="1" y2="0">
+                        <stop offset="23.1%" stopColor="#C52E19" />
+                        <stop offset="46.48%" stopColor="#E58226" />
+                        <stop offset="102.95%" stopColor="#EEFF28" />
                     </linearGradient>
-                    <linearGradient id="grad2" href="#grad1" x1="1" y1="0" x2="0" y2="1"></linearGradient>
-                    <linearGradient id="grad3" x1="0" y1="0" x2="1" y2="0">
-                        <stop offset="23.1%" stopColor="#C59419" />
-                        <stop offset="46.48%" stopColor="#E2E626" />
-                        <stop offset="102.95%" stopColor="#40bf79" />
+                    <linearGradient id="Clouds" x1="0" y1="0" x2="1" y2="0">
+                        <stop offset="45.98%" stopColor="#26A0E5" />
+                        <stop offset="100%" stopColor="#A2E4E0" />
                     </linearGradient>
                 </defs>
             </svg>

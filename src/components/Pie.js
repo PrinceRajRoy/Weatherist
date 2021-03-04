@@ -36,7 +36,7 @@ function Pie({ value, name }) {
             </div> */}
             <span className="Pie__name">{name}<br/>{value}%</span>
             <svg className="Pie__svg">
-                <circle className="Pie__circle" ref={circleRef} stroke="url(#grad3)" cx="50%" cy="50%"></circle>
+                <circle className="Pie__circle" ref={circleRef} stroke={`url(#${name})`} cx="50%" cy="50%"></circle>
             </svg>
         </div>
     )
