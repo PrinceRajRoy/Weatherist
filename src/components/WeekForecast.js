@@ -12,7 +12,7 @@ function WeekForecast({ data }) {
                     <div className="WeekForecast__day">{new Date(forecast.sunrise*1000).toString().split(" ")[0]}</div>
                     <div className="WeekForecast__temp">{forecast.temp.max}/{forecast.temp.min}</div>
                     <div>
-                        <img className="WeekForecast__icon" src={`http://openweathermap.org/img/wn/${forecast?.weather[0]?.icon}@2x.png`} alt="Weather Icon" />
+                        <img className="WeekForecast__icon" src={`https://openweathermap.org/img/wn/${forecast?.weather[0]?.icon}@2x.png`} alt="Weather Icon" />
                         <span className="WeekForecast__desc">{forecast?.weather[0]?.description}</span>
                     </div>
                 </div>

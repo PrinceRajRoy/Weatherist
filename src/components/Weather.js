@@ -32,7 +32,7 @@ function Weather() {
                     <div className="Weather__celsius">{toCelcius(data.main?.temp)}</div>
                     <div>Feels Like {toCelcius(data.main?.feels_like)}</div>
                     <div>
-                        <img className="Weather__icon" src={`http://openweathermap.org/img/wn/${data?.weather[0]?.icon}@2x.png`} alt="Weather Icon" />
+                        <img className="Weather__icon" src={`https://openweathermap.org/img/wn/${data?.weather[0]?.icon}@2x.png`} alt="Weather Icon" />
                         <span className="Weather__description">{data?.weather[0]?.description}</span>
                     </div>
                     <div className="Weather__Pies">

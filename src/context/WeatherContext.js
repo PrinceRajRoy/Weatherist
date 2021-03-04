@@ -12,7 +12,7 @@ function WeatherProvider(props) {
     const [apiKey] = useState(process.env.REACT_APP_apiKey)
 
     const fetchData = (location) => {
-        axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}&units=metric`)
+        axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}&units=metric`)
             .then(res => {
                 setWeather(res.data)
                 return axios.get(`https://api.openweathermap.org/data/2.5/onecall?lat=${res.data.coord.lat}&lon=${res.data.coord.lon}&appid=${apiKey}&units=metric&exclude=hourly,minutely`)
