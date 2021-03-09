@@ -5,7 +5,7 @@ import './SearchBar.sass'
 
 const SearchBar = forwardRef((props, ref) => {
 
-    const [location, setLocation] = useState('Tinsukia');
+    const [location, setLocation] = useState('');
     const containerRef = useRef();
     const { fetchData, location: loc } = useContext(WeatherContext)
 
